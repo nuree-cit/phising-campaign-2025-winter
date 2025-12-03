@@ -1,0 +1,275 @@
+<!-- 
+    Name:      lesson.html
+
+    Purpose:   educational contents for users who submit their information
+    Author:    nuna ⑨
+    Created:   12/1/2025  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSC SYSTEMS Phishing Campaign 2025</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e5f6f7; /* Light teal background */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #ffffff; /* White content background */
+        padding: 40px;
+        max-width: 900px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #0dbfd5; /* Teal for heading */
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #55565a; /* Cool gray for text */
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      /* Cards - Horizontal Layout */
+      .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 20px;
+        gap: 15px; /* Space between cards */
+      }
+
+      .card {
+        background-color: #f7fafb; /* Light teal for card background */
+        border: 2px solid #d3edee; /* Light teal border */
+        border-radius: 10px;
+        flex: 1; /* Makes all cards equal width */
+        padding: 20px;
+        text-align: left;
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover */
+        cursor: pointer;
+      }
+
+      .card:hover {
+        transform: translateY(-5px); /* Lifts the card slightly */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Emphasized shadow on hover */
+      }
+
+      .card h2 {
+        font-size: 16px;
+        color: #905aa6; /* Purple for card titles */
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #55565a; /* Cool gray for text */
+      }
+
+      .quiz {
+        margin-top: 40px;
+      }
+
+      .quiz h2 {
+        font-size: 20px;
+        color: #0dbfd5; /* Teal for quiz title */
+        margin-bottom: 10px;
+      }
+
+      .quiz p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .quiz ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .quiz li {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      .quiz button {
+        background-color: #905aa6; /* Purple for button */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .quiz button:hover {
+        background-color: #6a4e98; /* Darker purple for hover */
+      }
+
+      .footer {
+        margin-top: 40px;
+        color: #55565a;
+        font-size: 14px;
+      }
+
+      .footer a {
+        color: #0dbfd5; /* Teal for links */
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .cards {
+          flex-wrap: wrap; /* Cards stack vertically on small screens */
+        }
+
+        .card {
+          flex: 1 1 100%; /* Each card takes full width */
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Title -->
+      <h1>GSC SYSTEMS Phishing Campaign 2025</h1>
+      <!-- Intro Text -->
+
+      <p>
+        You just clicked a link from a Phishing email sent by the BCGSC Systems
+        team as a part of the Phishing Awareness Education Campaign.
+      </p>
+
+      <p>
+        Please be careful with any email that seems suspicious. Here are some
+        common signs of a phishing email:
+      </p>
+      <!-- Cards - Horizontal Layout -->
+
+      <div class="cards">
+        <div class="card">
+          <h2>✍ Spelling and Bad Grammar</h2>
+
+          <p>
+            Phishing emails often contain spelling mistakes and bad grammar.
+            These errors are a common sign of a phishing attempt.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>⚠️ Threats</h2>
+
+          <p>
+            Cyber criminals use threats to pressure victims into compliance. Be
+            wary of emails that create a sense of urgency or fear.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>🔗 Suspicious Links</h2>
+
+          <p>
+            Phishing emails often contain links to fraudulent websites. Hover
+            over links to check their true destination before clicking.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>💳 Unusual Requests</h2>
+
+          <p>
+            Be cautious of emails requesting sensitive information such as
+            passwords or financial details. Legitimate organizations rarely ask
+            for this via email.
+          </p>
+        </div>
+      </div>
+      <!-- Quiz -->
+
+      <div class="quiz">
+        <h2>Quick Quiz: Spot the Phishing Email</h2>
+
+        <p>Which of the following is likely a phishing email?</p>
+
+        <ul>
+          <li>
+            <input id="option1" name="quiz" type="radio" />
+            <label for="option1"
+              >An email saying you&#39;ve won a prize and asking for personal
+              information.</label
+            >
+          </li>
+          <li>
+            <input id="option2" name="quiz" type="radio" />
+            <label for="option2"
+              >An email from your bank reminding you of a scheduled
+              transaction.</label
+            >
+          </li>
+          <li>
+            <input id="option3" name="quiz" type="radio" />
+            <label for="option3"
+              >A newsletter you signed up for with promotional offers.</label
+            >
+          </li>
+        </ul>
+        <button onclick="checkQuiz()">Submit</button>
+      </div>
+      <!-- Footer -->
+
+      <div class="footer">
+        <p>
+          For more information, please visit the
+          <a
+            href="https://www.bcgsc.ca/wiki/display/SysHelp/Signs+of+Phishing+Emails"
+            >SysHelp Wiki page</a
+          >.
+        </p>
+
+        <p>~~SYSTEMS</p>
+      </div>
+    </div>
+    <script>
+      function checkQuiz() {
+        const selectedOption = document.querySelector(
+          'input[name="quiz"]:checked'
+        );
+        if (!selectedOption) {
+          alert("Please select an option.");
+          return;
+        }
+
+        const isCorrect = selectedOption.id === "option1";
+        alert(
+          isCorrect
+            ? "Correct! Phishing emails often ask for personal information in exchange for fake rewards."
+            : "Incorrect. Be cautious of emails that offer prizes or create urgency."
+        );
+      }
+    </script>
+  </body>
+</html>

